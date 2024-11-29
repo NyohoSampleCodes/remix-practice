@@ -1,1 +1,40 @@
-# remix-practice
+#+title: remix-practice
+
+* Welcome to Remix!
+
+- [[https://remix.run/docs][Remix Docs]]
+
+** Development
+
+From your terminal:
+
+#+begin_src sh
+npm run dev
+#+end_src
+
+This starts your app in development mode, rebuilding assets on file changes.
+
+** Deployment
+
+First, build your app for production:
+
+#+begin_src sh
+npm run build
+#+end_src
+
+Then run the app in production mode:
+
+#+begin_src sh
+npm start
+#+end_src
+
+Now you'll need to pick a host to deploy it to.
+
+*** DIY
+
+If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of ~remix build~
+
+- ~build/server~
+- ~build/client~
