@@ -16,7 +16,7 @@ export const loader = async ({
   if (!contact) {
     throw new Response("Not Found", { status: 404 });
   }
-  return json({ contact });
+  return json(contact);
 };
 
 export default function Contact() {
